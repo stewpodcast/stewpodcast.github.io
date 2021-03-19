@@ -74,7 +74,7 @@ p {
 
 .grid-container {
     display: grid;
-    grid-template-columns: minmax(0, 70px) 70px;
+    grid-template-columns: minmax(0, 70px) 80px;
     column-gap: 10px;
     background-color: var(--bkgbox);
     border: 2px solid var(--theme); 
@@ -171,34 +171,27 @@ h5 {
     animation: animateWave 3500ms cubic-bezier(0.43, 0.2, 0.43, 0.2) forwards infinite;
 }
 
+.episodes {
+    align-self: center;
+    align-content: center;
+}
 
 .episode-one {
     padding: var(--imagemargin) var(--imagemargin) var(--imagemargin) var(--imagemargin);
     background-color: rgb(187, 220, 240);
     border: 2px solid rgb(120, 149, 222); 
     display: flex;
+    grid-template-columns: minmax(0, 180px) 300px;
     max-height: 200px;
-    margin-left: 220px; 
-    float: left;
-    max-width: var(--size); min-width: var(--size);
+    margin-left: 220px; margin-right: 220px;
+    /*max-width: var(--size); min-width: var(--size);*/
 }
-
-.episode-two {
-    padding: var(--imagemargin) var(--imagemargin) var(--imagemargin) var(--imagemargin);
-    background-color: rgb(187, 220, 240);
-    border: 2px solid rgb(120, 149, 222); 
-    display: flex;
-    max-height: 200px;
-    margin-right: 220px; 
-    float: right;
-    max-width: var(--size); min-width: var(--size);
-}
-
 .episode_image {
     max-height: 90%; min-height: 90%; 
     max-width: 180px; min-width: 180px;
     display: block;
     margin-right: 10px;
+    border: 2px solid rgb(120, 149, 222); 
 }
 
 
