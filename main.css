@@ -212,6 +212,7 @@ h6 {
 
 .img-d {
     max-width: 180px; min-width: 180px;
+    max-height: 184px; min-height: 184px;
     margin: var(--imagemargin) var(--imagemargin) var(--imagemargin) var(--imagemargin);
     border: 7px solid var(--theme); 
 }
