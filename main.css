@@ -1,0 +1,199 @@
+
+:root {
+    --size: 34.5%;
+    --white: #ffffff;
+    --theme: rgb(222, 120, 151);
+    --black: rgb(0,0,0);
+    --bkgbox: rgb(235, 207, 218);
+    --darktext: rgb(17,15,37);
+    --imagemargin: 0px;
+
+    --gradientstart: rgb(226, 158, 158);
+    --gradientend: rgb(158, 86, 218);
+}
+body {
+    background-color: var(--white);
+    margin: 0px;
+}
+html {
+    box-sizing: border-box;
+}
+.bottom-line { 
+    border-bottom: 3px solid var(--theme); 
+    margin-top: 0.1px;
+    margin-bottom: 0.1px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+.final {
+    text-align: center;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color:var(--black);
+    margin-top: 2px;
+    padding: 2px;
+    
+    line-height: 2;
+    word-spacing: 2px;   
+}
+.about-us-text {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+.item {
+    width: 49.5%;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+.item2 {
+    width: 49.5%;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#avatar img {
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    /*padding: 1px 1px 1px 1px;*/
+    -webkit-filter: drop-shadow(1px 1px 1px var(--theme)) 
+                    drop-shadow(-1px -1px 1px var(--theme));
+    filter:drop-shadow(1px 1px 1px var(--theme)) 
+           drop-shadow(-1px -1px 1px var(--theme));
+    display: block;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: minmax(0, 70px) 80px;
+    column-gap: 10px;
+    background-color: var(--bkgbox);
+    border: 2px solid var(--theme); 
+    max-height: 70px;
+    margin: 0px;
+}
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: rgb(4, 4, 4);
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(left, var(--gradientstart) , var(--gradientend));
+    background: -o-linear-gradient(right, var(--gradientstart), var(--gradientend));
+     background: -moz-linear-gradient(right, var(--gradientstart), var(--gradientend));
+     background: linear-gradient(to right, var(--gradientstart) , var(--gradientend)); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--theme);
+    margin-bottom: 0px;
+    padding: 0px;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    margin-top: 0px;
+}
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: var(--black);
+    margin-bottom: 0px;
+    padding: 0px;
+}
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: var(--theme);
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.center {
+    margin: auto auto;
+}
+#hc {
+    text-align: center;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+.wave-container {
+    position: relative;
+    background: rgb(255, 255, 255);
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+}
+@keyframes animateWave {
+    0% {
+        transform: scale(1,0.75);
+    }
+    50% {
+        transform: scale(1,0.93);
+    }
+    100%{
+        transform: scale(1,0.75);
+    }
+}
+.wave-container > svg {
+    display: block;
+    transform-origin: top;
+    animation: animateWave 3500ms cubic-bezier(0.23, 0.2, 0.32, 0.2) backwards infinite;
+}
+.wave-container2 > svg {
+    display: block;
+    transform-origin: bottom;
+    animation: animateWave 3500ms cubic-bezier(0.43, 0.2, 0.43, 0.2) forwards infinite;
+}
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: var(--theme);
+    margin: 0px 5px 1px 0px;
+}
+.section {
+    background-color: white;
+    border: 2px solid var(--theme); 
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    max-height: 198px;
+    margin-left: 220px; margin-right: 220px;
+}
+.paragraph {
+    color: var(--darktext);
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    padding: 25px;
+}
+.title {
+    font-size: 24px;
+    line-height: 24px;
+}
+.img-d {
+    max-width: 180px; min-width: 180px;
+    max-height: 184px; min-height: 184px;
+    max-width: 100%;
+    margin: var(--imagemargin) var(--imagemargin) var(--imagemargin) var(--imagemargin);
+    border: 7px solid var(--theme); 
+}
